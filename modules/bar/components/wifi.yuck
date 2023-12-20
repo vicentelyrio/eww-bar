@@ -1,0 +1,8 @@
+(defwidget wifi []
+  (box
+    :class "wifi"
+    :orientation "horizontal"
+    (label :text `${WIFI}`)
+  )
+)
+

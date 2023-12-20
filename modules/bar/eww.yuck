@@ -1,0 +1,47 @@
+;; vars
+(include "./modules/bar/vars.yuck")
+
+;; components
+(include "./modules/bar/components/calendar.yuck")
+;; (include "./modules/bar/components/search.yuck")
+(include "./modules/bar/components/time.yuck")
+(include "./modules/bar/components/wifi.yuck")
+
+;; BAR
+(defwindow bar
+  :monitor 0
+  :namespace "sfx"
+  :stacking "fg"
+  :windowtype "dock"
+  :exclusive true
+  :wm-ignore true
+  :geometry (geometry
+    :x "0px"
+    :y "0px"
+    :width "100%"
+    :height "30px"
+    :anchor: "top center"
+  )
+  (box
+    :class "bar"
+    :orientation "h"
+    :spacing BAR_SPACE
+    (box
+      :class "bar-start"
+      :orientation "h"
+      :halign "start"
+      :space-evenly false
+      :spacing BAR_SPACE
+      (label :text "olar")
+    )
+    (box
+      :class "bar-end"
+      :orientation "h"
+      :halign "end"
+      :space-evenly false
+      :spacing BAR_SPACE
+      (wifi)
+      (timedisplay)
+    )
+  )
+)

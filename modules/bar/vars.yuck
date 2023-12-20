@@ -1,0 +1,7 @@
+;; bar
+(defvar BAR_HEIGHT 30)
+(defvar BAR_SPACE 20)
+
+;; components
+(defpoll WIFI :interval "100s" :initial `N/A` `./modules/bar/scripts/get-wifi.sh`)
+
