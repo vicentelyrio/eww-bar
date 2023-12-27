@@ -9,12 +9,14 @@
 (defpoll SSID :interval "100s" :initial `N/A` `~/.config/eww/modules/bar/scripts/wifi-ssid.sh`)
 
 ;; volume
-(defvar VOLUME 50)
+(defpoll VOLUME :interval "1s" "~/.config/eww/modules/bar/scripts/volume-get.sh")
+(defpoll VOLUME_ICON :interval "1s" "~/.config/eww/modules/bar/scripts/volume-icon.sh")
 
 ;; brightness
-(deflisten BRIGHTNESS :initial "󱧣" `~/.config/eww/modules/bar/scripts/brightness-get.sh`)
+(deflisten BRIGHTNESS_ICON :initial "󱩎" `~/.config/eww/modules/bar/scripts/brightness-icon.sh`)
+(deflisten BRIGHTNESS :initial " " `~/.config/eww/modules/bar/scripts/brightness-get.sh`)
 
 ;; workspaces
-(defpoll WORKSPACES :interval "0.6s" "~/.config/eww/modules/bar/scripts/workspaces-get.sh")
+(defpoll WORKSPACES :interval "1s" "~/.config/eww/modules/bar/scripts/workspaces-get.sh")
 (defpoll WORKSPACE_ACTIVE :interval "1s" "~/.config/eww/modules/bar/scripts/workspaces-active.sh")
 

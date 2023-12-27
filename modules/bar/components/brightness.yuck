@@ -3,7 +3,14 @@
     :class "brightness"
     :orientation "horizontal"
     :space-evenly false
-    (label :class "brightness-icon" :text `${BRIGHTNESS}`)
+    (label
+      :class "brightness-value"
+      :text "${BRIGHTNESS}"
+    )
+    (label
+      :class "brightness-icon"
+      :text "${BRIGHTNESS_ICON}"
+    )
   )
 )
 

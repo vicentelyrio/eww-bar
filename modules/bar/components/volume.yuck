@@ -3,7 +3,14 @@
     :class "volume"
     :orientation "horizontal"
     :space-evenly false
-    (label :class "volume-icon" :text `${SIGNAL}`)
+    (scale
+      :class "scale"
+      :min 0
+      :max 100
+      :value "${VOLUME}"
+      :onchange "pamixer --set-volume {}"
+    )
+    (label :class "volume-icon" :text "${VOLUME_ICON}")
   )
 )
 

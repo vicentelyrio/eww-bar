@@ -47,8 +47,8 @@
       :halign "end"
       :space-evenly false
       :spacing BAR_SPACE
-      (brightness)
       (volume)
+      (brightness)
       (wifi)
       (launcher)
       (time)

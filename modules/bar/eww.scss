@@ -25,3 +25,45 @@
   font-size: 12px;
   padding-right: 20px;
 }
+
+.scale {
+  all: unset;
+  color: #ffd5cd;
+}
+
+.scale trough highlight {
+  all: unset;
+  background-color: #D35D6E;
+  color: #000000;
+  border-radius: 10px;
+}
+.scale trough {
+  all: unset;
+  background-color: #4e4e4e;
+  border-radius: 50px;
+  min-height: 8px;
+  min-width: 50px;
+  margin-left: 10px;
+  margin-right: 20px;
+}
+.scale trough highlight {
+  all: unset;
+  background-color: #D35D6E;
+  color: #000000;
+  border-radius: 10px;
+}
+.scale trough {
+  all: unset;
+  background-color: #4e4e4e;
+  border-radius: 50px;
+  min-height: 8px;
+  min-width: 50px;
+  margin-left: 10px;
+  margin-right: 20px;
+}
+
+.brightness-value {
+  color: $base05;
+  font-size: 12px;
+  padding-right: 10px;
+}
