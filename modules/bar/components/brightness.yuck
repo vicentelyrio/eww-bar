@@ -1,0 +1,9 @@
+(defwidget brightness []
+  (box
+    :class "brightness"
+    :orientation "horizontal"
+    :space-evenly false
+    (label :class "brightness-icon" :text `${BRIGHTNESS}`)
+  )
+)
+

@@ -1,16 +1,16 @@
 (defpoll time
   :interval "1s"
   :initial `date +'%a %d %b %H:%M'`
-  `date +'%a %d %b   %H:%M'`
+  `date +'%a  %d %b  %H:%M'`
 )
 
-(defwidget timedisplay []
-  (box
-    :class "timedisplay"
-    :orientation "horizontal"
-    (eventbox
-      :onclick "./modules/bar/scripts/open-calendar.sh"
-      (label :text `${time}`)
+(defwidget time []
+  (button
+    :onclick `${DIR}/scripts/calendar-open.sh &`
+    :class "time-button"
+    (label
+      :text `${time}`
+      :class "time-label"
     )
   )
 )

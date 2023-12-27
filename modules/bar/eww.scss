@@ -1,17 +1,27 @@
-.bar-container {
-  background: transparent;
-}
+@import "../../theme/_default.scss";
+
+* { all: unset; }
 
 .bar {
-  background-color: transparent;
-  padding: 0 10px;
+  color: $base05;
+  padding: 0 14px;
 }
 
-.bar-start {
-  margin-left: 0px;
+.system-icon {
+  font-size: 18px;
 }
 
-.bar-end {
-  padding-right: 0px;
+.calendar-box {
+  background-color: $base03;
+  padding: 20px;
 }
 
+.calendar {
+  padding: 2px;
+}
+
+.wifi-name {
+  color: $base05;
+  font-size: 12px;
+  padding-right: 20px;
+}

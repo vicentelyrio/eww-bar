@@ -2,7 +2,9 @@
   (box
     :class "wifi"
     :orientation "horizontal"
-    (label :text `${WIFI}`)
+    :space-evenly false
+    (label :class "wifi-name" :text `${SSID}`)
+    (label :class "wifi-icon" :text `${SIGNAL}`)
   )
 )
 

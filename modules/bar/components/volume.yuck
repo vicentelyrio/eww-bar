@@ -1,0 +1,9 @@
+(defwidget volume []
+  (box
+    :class "volume"
+    :orientation "horizontal"
+    :space-evenly false
+    (label :class "volume-icon" :text `${SIGNAL}`)
+  )
+)
+

@@ -1,5 +1,0 @@
-;; global components
-(include "./components/closer.yuck")
-
-;; modules
-(include "./modules/bar/eww.yuck")
