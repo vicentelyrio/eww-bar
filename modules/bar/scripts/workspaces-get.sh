@@ -11,4 +11,14 @@ workspaces=$(echo "$workspaces" | tr '\n' ',')
 # Remove the trailing comma
 workspaces=${workspaces%,}
 
-echo "[$workspaces]"
+# Extract the minimum and maximum values
+min_value=1
+max_value=$(echo "$workspaces" | tr ',' '\n' | sort -n | tail -n 1)
+
+# Generate the sequence and fill gaps
+filled_sequence=$(seq -s, "$min_value" "$max_value")
+
+# Add square brackets
+result="[$filled_sequence]"
+
+echo "$result"

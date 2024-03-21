@@ -2,68 +2,146 @@
 
 * { all: unset; }
 
+window {
+  border-radius: $radius2;
+}
+/*
+*  Bar
+*/
 .bar {
-  color: $base05;
-  padding: 0 14px;
+  color: $text;
+  padding: 0 $space3;
 }
 
+/*
+* System
+*/
 .system-icon {
-  font-size: 18px;
+  font-size: $icon-lg;
 }
 
+.system-menu {
+  background-color: $base;
+  border-radius: $radius1;
+  padding: 0 $space1;
+}
+
+.system-menu-group {
+  border-bottom: $crust 1px solid;
+  padding-bottom: $space1;
+  margin-top: $space1;
+}
+
+.system-menu-button {
+  border-radius: $radius1;
+  min-width: 50px;
+
+  &:hover {
+    background: $surface0;
+  }
+}
+
+.system-menu-label {
+  padding: $space2;
+}
+
+/*
+* Workspace
+*/
+.workspace {
+  color: $surface0;
+}
+
+.workspace-active {
+  color: $primary;
+}
+
+/*
+* Calendar
+*/
 .calendar-box {
-  background-color: $base03;
-  padding: 20px;
+  background-color: $base;
+  border-radius: $radius2;
+  padding: $space3;
 }
 
 .calendar {
-  padding: 2px;
+  padding: $space1;
 }
 
+.calendar:selected {
+  background: $primary;
+  border-radius: $radius2;
+  color: $surface0;
+}
+
+/*
+* Wifi
+*/
 .wifi-name {
-  color: $base05;
-  font-size: 12px;
-  padding-right: 20px;
+  color: inherit;
+  font-size: $font-md;
+  padding-right: $space2;
+}
+.wifi-icon {
+  color: inherit;
+  font-size: $icon-md;
 }
 
+/*
+* Light
+*/
+.brightness-icon {
+  color: inherit;
+  font-size: $icon-md;
+}
+
+/*
+* Volume
+*/
+.volume-icon {
+  color: inherit;
+  font-size: $icon-md;
+}
+
+/*
+* Slider
+*/
 .scale {
   all: unset;
-  color: #ffd5cd;
+  color: inherit;
 }
 
 .scale trough highlight {
   all: unset;
-  background-color: #D35D6E;
-  color: #000000;
-  border-radius: 10px;
-}
-.scale trough {
-  all: unset;
-  background-color: #4e4e4e;
-  border-radius: 50px;
-  min-height: 8px;
-  min-width: 50px;
-  margin-left: 10px;
-  margin-right: 20px;
-}
-.scale trough highlight {
-  all: unset;
-  background-color: #D35D6E;
-  color: #000000;
-  border-radius: 10px;
-}
-.scale trough {
-  all: unset;
-  background-color: #4e4e4e;
-  border-radius: 50px;
-  min-height: 8px;
-  min-width: 50px;
-  margin-left: 10px;
-  margin-right: 20px;
+  background-color: $crust;
+  color: inherit;
+  border-radius: $radius1;
 }
 
-.brightness-value {
-  color: $base05;
-  font-size: 12px;
-  padding-right: 10px;
+.scale trough {
+  all: unset;
+  background-color: $crust;
+  border-radius: $radius1;
+  min-height: 8px;
+  min-width: 50px;
+  margin-left: $space2;
+  margin-right: $space2;
+}
+
+.scale trough highlight {
+  all: unset;
+  background-color: $primary;
+  border-radius: $radius1;
+  color: inherit;
+}
+
+.scale trough {
+  all: unset;
+  background-color: $surface0;
+  border-radius: $radius1;
+  min-height: 8px;
+  min-width: 50px;
+  margin-left: $space2;
+  margin-right: $space2;
 }

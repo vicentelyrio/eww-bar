@@ -15,7 +15,7 @@
   :stacking "fg"
   :namespace "bar"
   :geometry (geometry
-    :y "40px"
+    :y "34px"
     :x "10px"
     :width "200px"
     :height "60px"

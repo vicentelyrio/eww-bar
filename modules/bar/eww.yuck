@@ -7,6 +7,7 @@
 (include "./components/closer.yuck")
 (include "./components/launcher.yuck")
 (include "./components/system.yuck")
+(include "./components/system-menu.yuck")
 (include "./components/time.yuck")
 (include "./components/volume.yuck")
 (include "./components/wifi.yuck")

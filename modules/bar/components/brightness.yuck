@@ -3,9 +3,12 @@
     :class "brightness"
     :orientation "horizontal"
     :space-evenly false
-    (label
-      :class "brightness-value"
-      :text "${BRIGHTNESS}"
+    (scale
+      :class "scale brightness-scale"
+      :min 0
+      :max 100
+      :value "${BRIGHTNESS}"
+      :onchange "${EWW_CONFIG_DIR}/scripts/brightness-set.sh {} &"
     )
     (label
       :class "brightness-icon"
