@@ -1,7 +1,9 @@
 #!/bin/sh
 
 if command -v ddcutil &>/dev/null; then
-  brightness=$(ddcutil getvcp 10 --bus 10 --sleep-multiplier 0 --terse | grep VCP | awk -F ' ' '{print $4}')
+  # bus=$(ddcutil detect --terse --sleep-multiplier 0 | grep bus | awk -F '-' '{print $2}')
+  # brightness=$(ddcutil getvcp 10 --bus 19 --sleep-multiplier 0 --terse | grep VCP | awk -F ' ' '{print $4}')
+  brightness=$(brightnessctl g)
 
   if [[ "$brightness" -gt 80 ]]; then
     echo "󰛨"

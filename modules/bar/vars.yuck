@@ -41,7 +41,7 @@
   "~/.config/eww/modules/bar/scripts/brightness-get.sh"
 )
 
-(deflisten
+(defpoll
   BRIGHTNESS_ICON
   :interval ".1s"
   "~/.config/eww/modules/bar/scripts/brightness-icon.sh"
