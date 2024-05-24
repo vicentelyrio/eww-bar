@@ -34,7 +34,7 @@
 )
 
 ;; brightness
-(deflisten
+(defpoll
   BRIGHTNESS
   :interval ".1s"
   :initial 40
